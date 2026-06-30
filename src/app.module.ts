@@ -7,6 +7,7 @@ import { TasksModule } from './modules/tasks/tasks.module';
 import { UserModule } from './modules/users/user.module';
 import { CompanyModule } from './modules/companies/company.module';
 import { LlmModule } from './modules/llm/llm.module';
+import { WebhookModule } from './modules/webhook/webhook.module';
 
 @Module({
   imports: [
@@ -26,6 +27,7 @@ import { LlmModule } from './modules/llm/llm.module';
     LlmModule,
     TasksModule,
     UserModule,
+    WebhookModule
   ],
   controllers: [],
   providers: [],
