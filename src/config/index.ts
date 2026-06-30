@@ -1,0 +1,10 @@
+import * as dotenv from 'dotenv';
+
+import { IConfig } from './config.interface';
+
+dotenv.config();
+
+export default (): IConfig => ({
+  port: parseInt(process.env.PORT ?? '3000', 10),
+  MONGODB_URI: process.env.MONGODB_URI || '',
+});
