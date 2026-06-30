@@ -6,6 +6,7 @@ import { MongooseModule } from '@nestjs/mongoose';
 import { TasksModule } from './modules/tasks/tasks.module';
 import { UserModule } from './modules/users/user.module';
 import { CompanyModule } from './modules/companies/company.module';
+import { LlmModule } from './modules/llm/llm.module';
 
 @Module({
   imports: [
@@ -22,6 +23,7 @@ import { CompanyModule } from './modules/companies/company.module';
       inject: [ConfigService],
     }),
     CompanyModule,
+    LlmModule,
     TasksModule,
     UserModule,
   ],
